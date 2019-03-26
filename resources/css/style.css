@@ -116,6 +116,7 @@ img{
 
 .top-box .title{
   font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .top-box .price{
@@ -210,6 +211,54 @@ img{
   height: 200px;
 }
 
+/************* Top Container-Services ******************/
+.top-container-services{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    'showcase-analytics showcase-marketing'
+    'showcase-development showcase-support';
+}
+
+.top-container-services p{
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.services{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  box-shadow: var(--shadow);
+  min-height: 500px;
+  background-color: var(--primary);
+  padding: 3rem;
+}
+
+.showcase-analytics{
+  grid-area: showcase-analytics;
+}
+
+.showcase-marketing{
+  grid-area: showcase-marketing;
+}
+
+.showcase-development{
+  grid-area: showcase-development;
+}
+
+.showcase-support{
+  grid-area: showcase-support;
+}
+
+.services h1{
+  margin: 1rem 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
 /****************** Boxes *************************/
 .boxes{
   display: grid;
@@ -224,7 +273,16 @@ img{
   box-shadow: var(--shadow);
 }
 
-/****************** Testimonials *************************/
+.box h3{
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.box p{
+  margin-bottom: 1rem;
+}
+
+/****************** Testimonials-About ****************/
 .testimonials{
   display: grid;
   grid-gap: 20px;
@@ -301,6 +359,14 @@ footer{
       'side-box-a'
   }
 
+  .top-container-services{
+    grid-template-areas:
+      'showcase-analytics'
+      'showcase-marketing'
+      'showcase-development'
+      'showcase-support';
+  }
+
   .side-box-a{
     flex-direction: column;
     justify-content: center;
@@ -360,6 +426,32 @@ footer{
       'side-box-a';
   }
 
+  .top-container-services{
+    grid-template-areas:
+      'showcase-analytics'
+      'showcase-marketing'
+      'showcase-development'
+      'showcase-support';
+  }
+
+  .top-container .btn{
+    text-align: center;
+    margin: 0 auto;
+    width: 15rem;
+  }
+
+  .box .btn{
+    display: block;
+    text-align: center;
+    width: 15rem;
+    margin: auto;
+  }
+
+  .showcase{
+    text-align: center;
+    align-items: center;
+  }
+
   .showcaseAbout{
     text-align: center;
   }
@@ -376,16 +468,34 @@ footer{
 
   .showcaseAbout .btn{
     margin: 0 auto;
+    width: 15rem;
   }
 
   .side-box{
     max-width: 500px;
   }
 
+  .side-box .btn{
+    margin: 0 auto;
+    width: 15rem;
+  }
 
+  .services .btn{
+    text-align: center;
+    margin: 0 auto;
+    width: 15rem;
+  }
 
   .testimonials{
     grid-template-columns: 1fr;
+  }
+
+  .services p{
+    text-align: center;
+  }
+
+  .info{
+    text-align: center;
   }
 
 }
