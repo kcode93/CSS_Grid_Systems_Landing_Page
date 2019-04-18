@@ -245,16 +245,8 @@ img{
   grid-area: showcase-marketing;
 }
 
-.showcase-marketing .btn{
-  margin-top: 1.7rem;
-}
-
 .showcase-development{
   grid-area: showcase-development;
-}
-
-.showcase-development .btn{
-  margin-top: 1.5rem;
 }
 
 .showcase-support{
@@ -265,6 +257,10 @@ img{
   margin: 1rem 0;
   font-size: 2rem;
   font-weight: bold;
+}
+
+.services .btn{
+  margin-top: auto;
 }
 
 /**************** Top-container-contact ****************/
