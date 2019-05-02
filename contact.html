@@ -33,17 +33,17 @@
       <!--Top Container-->
       <section class="top-container-contact">
         <div class="showcaseBuilding">
-        </div><!--end of header-->
+        </div><!--end of showcaseBuilding-->
 
         <div class="showcaseMap">
-
-        </div><!--end of header-->
+          <div id="map"></div>
+        </div><!--end of showcaseMap-->
 
         <div class="side-box-contact side-box-contact-a">
           <table>
             <tbody>
               <tr>
-                <td class="tTitle">Address: </td><td>1234 S Calixto Ave.<br> Long Beach C.A </td>
+                <td class="tTitle">Address: </td><td>1234 S Calixto Av.<br> Long Beach C.A </td>
               </tr><!--end of row-->
               <tr>
                 <td class="tTitle">Number: </td><td>(562)123-4567</td>
@@ -95,5 +95,15 @@
         <p>GridBiz &copy; 2019</p>
       </footer><!--end of footer-->
     </div><!--end of wrapper-->
+
+    <!--google Maps API-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+    async defer></script>
+
+    <!--JQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <!--scripts-->
+    <script src="./resources/js/main.js"></script>
   </body>
 </html>
