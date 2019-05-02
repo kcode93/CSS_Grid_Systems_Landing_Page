@@ -486,6 +486,15 @@ footer{
       'showcase-support';
   }
 
+  .top-container-contact{
+    grid-template-areas:
+    'showcaseBuilding' 
+    'side-box-contact-a'
+    'showcaseMap' 
+    'side-box-contact-b';
+    grid-template-columns: auto;
+  }
+
   .side-box-a{
     flex-direction: column;
     justify-content: center;
@@ -551,6 +560,15 @@ footer{
       'showcase-marketing'
       'showcase-development'
       'showcase-support';
+  }
+
+  .top-container-contact{
+    grid-template-areas:
+    'showcaseBuilding' 
+    'side-box-contact-a'
+    'showcaseMap' 
+    'side-box-contact-b';
+    grid-template-columns: auto;
   }
 
   .top-container .btn{
